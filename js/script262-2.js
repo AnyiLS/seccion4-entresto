@@ -1,29 +1,46 @@
 $(document).ready(function () {
+	showBoxes();
+	
 	// modal 1
 	$('.openModal').on('click', () => {
-		$('.modal').css('display', 'block')
+		errorSound();
+
+		setTimeout(() => {
+			$('.modal').fadeIn();
+		}, 1000)
 	})
 	// cerra modal
 	$('.closeModal').on('click', () => {
-		$('.modal').css('display', 'none')
+		handleChangeView(263);
 	})
 
 	// modal 1
 	$('.openModal1').on('click', () => {
-		$('.modal1').css('display', 'block')
-	})
-	// cerra modal
-	$('.closeModal1').on('click', () => {
-		$('.modal1').css('display', 'none')
+		errorSound();
+
+		setTimeout(() => {
+			$('.modal').fadeIn();
+		}, 1000)
 	})
 
 	// modal 2
 	$('.openModal2').on('click', () => {
-		$('.modal2').css('display', 'block')
-	})
-	// cerra modal
-	$('.closeModal2').on('click', () => {
-		$('.modal2').css('display', 'none')
+		errorSound();
+
+		setTimeout(() => {
+			$('.modal').fadeIn();
+		}, 1000)
 	})
 	
+	// Seleccion de la respuesta correcta
+	$(".opcion").on("click", () => {
+		handleShowCurrentBox(2);
+		handleOptionCorrectShow('.correcta');
+		boxSound();
+		handleSaveCorrectQuestion(3)
+
+		setTimeout(() => {
+			handleChangeView(263);
+		}, 2000)
+	})
 })

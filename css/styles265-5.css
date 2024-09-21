@@ -202,3 +202,14 @@ body {
 		height: auto;
 	}
 }
+
+.opcion {
+	width: 47.7%;
+    height: 8.4%;
+    position: absolute;
+    top: 55.8%;
+    right: 3.8%;
+    border-radius: 36px;
+    z-index: 1;
+	cursor: pointer;
+}

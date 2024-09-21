@@ -1,14 +1,9 @@
-function sonidoexitoso() {
-	let audio = new Audio('imagenes/sonido/correcto.mp3')
+function errorSound() {
+	let audio = new Audio('imagenes/sonidos/incorrecta.mp3')
 	audio.play()
 }
 
-function sonidoerroneo() {
-	let audio = new Audio('imagenes/sonido/mala.mp3')
-	audio.play()
-}
-
-function sonidocarta() {
-	let audio = new Audio('imagenes/sonido/carta-reversa.mp3')
+function boxSound() {
+	let audio = new Audio('imagenes/sonidos/caja.mp3')
 	audio.play()
 }

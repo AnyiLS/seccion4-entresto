@@ -1,29 +1,44 @@
 $(document).ready(function () {
-	// modal 1
+	// Opcion incorrecta (A)
 	$('.openModal').on('click', () => {
-		$('.modal').css('display', 'block')
+		errorSound();
+
+		setTimeout(() => {
+			$('.modal').fadeIn();
+		}, 1000)
 	})
-	// cerra modal
+	// Cerrar modal y redireccionar
 	$('.closeModal').on('click', () => {
-		$('.modal').css('display', 'none')
+		handleChangeView(261);
 	})
 
-	// modal 1
+	// Opcion incorrecta (B)
 	$('.openModal1').on('click', () => {
-		$('.modal1').css('display', 'block')
-	})
-	// cerra modal
-	$('.closeModal1').on('click', () => {
-		$('.modal1').css('display', 'none')
+		errorSound();
+
+		setTimeout(() => {
+			$('.modal').fadeIn();
+		}, 1000)
 	})
 
-	// modal 2
+	// Opcion incorrecta (D)
 	$('.openModal2').on('click', () => {
-		$('.modal2').css('display', 'block')
+		errorSound();
+
+		setTimeout(() => {
+			$('.modal').fadeIn();
+		}, 1000)
 	})
-	// cerra modal
-	$('.closeModal2').on('click', () => {
-		$('.modal2').css('display', 'none')
+
+	// Seleccion de la respuesta correcta
+	$(".opcion").on("click", () => {
+		handleShowCurrentBox(0);
+		handleOptionCorrectShow('.correcta');
+		boxSound();
+		handleSaveCorrectQuestion(1)
+
+		setTimeout(() => {
+			handleChangeView(261);
+		}, 2000)
 	})
-	
 })

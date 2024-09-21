@@ -122,3 +122,13 @@ body {
 		height: auto;
 	}
 }
+
+.total {
+	position: absolute;
+    top: 45%;
+    right: 37%;
+    color: transparent;
+    background: linear-gradient(to top, #0761a6, #2280bc);
+    background-clip: text;
+    font-weight: 700;
+}

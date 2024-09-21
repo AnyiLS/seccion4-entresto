@@ -175,6 +175,19 @@ body {
 	height: 100%;
 }
 
+.caja9 {
+	position: absolute;
+	width: 9.6%;
+    top: 35.8%;
+    left: 14.3%;
+	cursor: pointer;
+}
+
+.caja9 img {
+	width: 100%;
+	height: 100%;
+}
+
 /* Respuestas correcta y incorrectas */
 .correcta {
 	position: absolute;

@@ -122,3 +122,23 @@ body {
 		height: auto;
 	}
 }
+
+.total {
+	position: absolute;
+    top: 40.4%;
+    right: 38%;
+    color: transparent;
+    background: linear-gradient(to top, #0761a6, #2280bc);
+    background-clip: text;
+    font-weight: 700;
+}
+
+.intentos {
+	position: absolute;
+    top: 69%;
+    right: 17.6%;
+    font-weight: 700;
+	color: transparent;
+    background: linear-gradient(to top, #0761a6, #2280bc);
+    background-clip: text;
+}
