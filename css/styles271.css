@@ -147,4 +147,5 @@ body {
 	color: transparent;
     background: linear-gradient(to top, #0761a6, #2280bc);
     background-clip: text;
+	font-family: volta_modern_display_75_bold;
 }
