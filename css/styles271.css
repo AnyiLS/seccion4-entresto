@@ -1,3 +1,8 @@
+@font-face {
+	font-family: volta_modern_display_75_bold;
+	src: url('../css/volta_modern_display_75_bold.otf');
+}
+
 
 body {
 	margin: 0;
@@ -131,6 +136,7 @@ body {
     background: linear-gradient(to top, #0761a6, #2280bc);
     background-clip: text;
     font-weight: 700;
+	font-family: volta_modern_display_75_bold;
 }
 
 .intentos {
