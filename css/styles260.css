@@ -43,7 +43,7 @@ body {
 	top: 51.7%;
 	left: 9.3%;
 	cursor: pointer;
-	z-index: 10;
+	z-index: 1000;
 }
 
 .barco img {
@@ -58,6 +58,7 @@ body {
 	top: 47%;
 	left: 9.6%;
 	cursor: pointer;
+	z-index: 10;
 }
 
 .caja img {

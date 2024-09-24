@@ -7,6 +7,10 @@ $(document).ready(function () {
 
 		setTimeout(() => {
 			$('.modal').fadeIn();
+			$('.caja').css('z-index', '1000')
+			$('.caja1').css('z-index', '1000')
+			$('.caja2').css('z-index', '1000')
+			$('.caja3').css('z-index', '1000')
 		}, 1000)
 	})
 	// cerra modal
@@ -20,6 +24,10 @@ $(document).ready(function () {
 
 		setTimeout(() => {
 			$('.modal').fadeIn();
+			$('.caja').css('z-index', '1000')
+			$('.caja1').css('z-index', '1000')
+			$('.caja2').css('z-index', '1000')
+			$('.caja3').css('z-index', '1000')
 		}, 1000)
 	})
 
@@ -29,6 +37,10 @@ $(document).ready(function () {
 
 		setTimeout(() => {
 			$('.modal').fadeIn();
+			$('.caja').css('z-index', '1000')
+			$('.caja1').css('z-index', '1000')
+			$('.caja2').css('z-index', '1000')
+			$('.caja3').css('z-index', '1000')
 		}, 1000)
 	})
 	
