@@ -14,7 +14,8 @@ const handleSaveCorrectQuestion = (number) => {
     if (!responses) {
         localStorage.setItem("responses", JSON.stringify([number]));
     } else {
-        localStorage.setItem("responses", JSON.stringify([...responses, number]));
+        if(!responses.includes(number)) localStorage.setItem("responses", JSON.stringify([...responses, number]));
+        
     }
 }
 
