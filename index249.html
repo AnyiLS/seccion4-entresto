@@ -24,16 +24,28 @@
 			<a href="./index248.html" class="boton-atras"></a>
 			<a href="./index250.html" class="boton-next"></a>
 
-			<a href="./index274.html" class="dowload"></a>
+			<div href="" class="dowload"></div>
 
 			<div
 				class="puntero animate__animated animate__pulse animate__infinite">
 				<img src="./imagenes/puntero.png" alt="puntero" />
 			</div>
+
+			<div class="vutom-col"></div>
 		</div>
 
 		<!-- Scripts -->
 
 		<script src="./js/scripts.js"></script>
+		<script>
+			const key = localStorage.getItem('key')
+
+			if(key) document.querySelector('.vutom-col').style.display = 'none'
+
+			document.querySelector('.dowload').addEventListener('click', () => {
+				localStorage.setItem('key', 'true')
+				window.location.href = "./index274.html"
+			})
+		</script>
 	</body>
 </html>

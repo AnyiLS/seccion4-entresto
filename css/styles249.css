@@ -115,6 +115,16 @@ body {
 	}
 }
 
+.vutom-col {
+	position: absolute;
+	width: 4.4%;
+    height: 7.2%;
+    top: 87%;
+    right: 3%;
+	background: #ffffff80;
+	border-radius: 90px;
+}
+
 /* Responsive */
 @media (max-width: 1365px) and (min-height: 768px) {
 	.container {
