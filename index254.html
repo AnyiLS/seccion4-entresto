@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Estructura secion 4 Entresto</title>
+		<title>Estructura Módulo 1 Entresto</title>
 
 		<link rel="stylesheet" href="./css/styles254.css" />
 		<link
@@ -24,23 +24,57 @@
 			<a href="./index253.html" class="boton-atras"></a>
 			<a href="./index255.html" class="boton-next"></a>
 
-			<!-- modal  -->
-			<div class="openModal"></div>
-			<img src="./imagenes/cuadro1.png" class="ancho" id="image-1" />
-			<!-- <div class="modal" style="display: none; height: 100%">
-				<div class="closeModal"></div>
-			</div> -->
+			<!-- Buttoms -->
+			<div class="abrir1" id="abrir1">
+				<img class="menu1" src="./imagenes/cuadro2.png" alt="" />
+			</div>
 
-			<div class="openModal1"></div>
-			<img src="./imagenes/cuadro2.png" class="ancho" id="image" />ß
-			<!-- <div class="modal1" style="display: none; height: 100%">
-				<div class="closeModal1"></div>
-			</div> -->
+			<div class="abrir2" id="abrir2">
+				<img class="menu2" src="./imagenes/cuadro1.png" alt="" />
+			</div>
 
+			<!--  -->
+			<div
+				class="cursor circle animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/b-grus.png" alt="" />
+			</div>
+			<div
+				class="cursor1 circle animate__animated animate__pulse animate__infinite">
+				<img src="./imagenes/b-grus.png" alt="" />
+			</div>
+
+			<div class="vutom-col"></div>
 		</div>
 
 		<!-- Scripts -->
-
 		<script src="./js/script254.js"></script>
+		<script>
+			$(document).ready(function () {
+				const slide = [
+					'slide254-1',
+					'slide254-2',
+				]
+				$(document).ready(function () {
+					const newSlide = slide.every((item) => {
+						if (localStorage.getItem(item) === 'true') return item
+					})
+					if (newSlide) {
+						$('.vutom-col').hide()
+					} else {
+						$('.vutom-col').show()
+					}
+
+					for (let i = 0; i < 3; i++) {
+						if (localStorage.getItem(slide[i]) === 'true') {
+							if (i === 0) {
+								$(`.cursor`).hide()
+							} else {
+								$(`.cursor${i}`).hide()
+							}
+						}
+					}
+				})
+			})
+		</script>
 	</body>
 </html>

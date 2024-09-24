@@ -1,6 +1,3 @@
-@import './variables.css';
-@import './classes.css';
-
 body {
 	margin: 0;
 	height: 100vh;
@@ -23,20 +20,22 @@ body {
 	height: 100vh;
 }
 
-.start-button {
-	position: absolute;
-	top: 0%;
-	left: 0%;
-	width: 100%;
-	height: 100%;
-}
-
 .boton-home {
 	position: absolute;
 	width: 6%;
 	height: 10%;
 	top: 4%;
 	right: 2%;
+	cursor: pointer;
+}
+
+.boton-next {
+	position: absolute;
+	width: 6%;
+	height: 10%;
+	top: 85%;
+	right: 2%;
+	cursor: pointer;
 }
 
 .boton-atras {
@@ -45,15 +44,255 @@ body {
 	height: 10%;
 	top: 85%;
 	left: 2%;
+	cursor: pointer;
 }
 
-.butom {
+/* imagen 1 */
+.menu1 {
 	position: absolute;
-	width: 35%;
-	height: 10%;
-	left: 33%;
-	top: 85%;
+	width: 1000%;
+    top: 83.5%;
+    right: -81%;
+    z-index: 100;
+    display: none;
+}
+
+.menu1 img {
+	width: 100%;
+	height: 100%;
+}
+
+.abrir1 {
+	position: absolute;
+	width: 6%;
+    height: 12.2%;
+	right: 7%;
+    top: 36%;
+	z-index: 100;
+	border-radius: 43px;
 	cursor: pointer;
+}
+/* imagen 1 */
+
+/* imagen 2 */
+.menu2 {
+	position: absolute;
+	width: 1020%;
+    top: -196%;
+    left: -484%;
+	z-index: 100;
+	display: none;
+	cursor: pointer;
+}
+
+.menu2 img {
+	width: 100%;
+	height: 100%;
+}
+
+.abrir2 {
+	position: absolute;
+	width: 6%;
+    height: 12.2%;
+    left: 40%;
+    top: 75%;
+	border-radius: 43px;
+	z-index: 100;
+	cursor: pointer;
+}
+/* imagen 1 */
+
+/* imagen 2 */
+.menu3 {
+	position: absolute;
+	width: 1100%;
+    top: -289%;
+    left: 116.7%;
+	z-index: 100;
+	display: none;
+	cursor: pointer;
+}
+
+.menu3 img {
+	width: 100%;
+	height: 100%;
+}
+
+.abrir3 {
+	position: absolute;
+	width: 6%;
+    height: 12.2%;
+    left: 25%;
+    top: 59%;
+	z-index: 100;
+	cursor: pointer;
+}
+/* imagen 1 */
+
+/* imagen 4 */
+.menu4 {
+	position: absolute;
+	width: 388.2%;
+	top: -446%;
+	left: 102.9%;
+	z-index: 100;
+	display: none;
+	cursor: pointer;
+}
+
+.menu4 img {
+	width: 100%;
+	height: 100%;
+}
+
+.abrir4 {
+	position: absolute;
+	width: 17%;
+	height: 9%;
+	left: 14.4%;
+	top: 60.2%;
+	z-index: 100;
+	cursor: pointer;
+}
+/* imagen 1 */
+
+/* imagen 5 */
+.menu5 {
+	position: absolute;
+	width: 388.2%;
+	top: -590%;
+	left: 102.9%;
+	z-index: 100;
+	display: none;
+	cursor: pointer;
+}
+
+.menu5 img {
+	width: 100%;
+	height: 100%;
+}
+
+.abrir5 {
+	position: absolute;
+	width: 17%;
+	height: 9%;
+	left: 14.4%;
+	top: 73.2%;
+	z-index: 100;
+	cursor: pointer;
+}
+/* imagen 5 */
+
+.cursor {
+	position: absolute;
+	width: 3%;
+    top: 41.8%;
+    right: 9.5%;
+	transform: rotate(278deg);
+	cursor: pointer;
+}
+
+.cursor img {
+	width: 100%;
+	height: 100%;
+}
+
+.cursor1 {
+	position: absolute;
+	width: 3%;
+	top: 77.5%;
+    left: 42.1%;
+	transform: rotate(278deg);
+	cursor: pointer;
+}
+
+.cursor1 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cursor2 {
+	position: absolute;
+	width: 6.3%;
+    top:59.1%;
+    left: 24.9%;
+	transform: rotate(278deg);
+	cursor: pointer;
+}
+
+.cursor2 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cursor3 {
+	position: absolute;
+	width: 4.9%;
+	top: 60.2%;
+	left: 25.2%;
+	transform: rotate(278deg);
+	cursor: pointer;
+}
+
+.cursor3 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cursor4 {
+	position: absolute;
+	width: 4.9%;
+	top: 73.2%;
+	left: 25.2%;
+	transform: rotate(278deg);
+	cursor: pointer;
+}
+
+.cursor4 img {
+	width: 100%;
+	height: 100%;
+}
+
+.vutom-col {
+	position: absolute;
+	width: 4.4%;
+    height: 8%;
+    top: 86.8%;
+    right: 3%;
+	background: #ffffff80;
+	border-radius: 90px;
+}
+
+.circle::before,
+.circle::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 70px;
+	height: 70px;
+	border: 10px solid #80808057;
+	border-radius: 100%;
+	animation: latido linear 3s infinite;
+	background: #ffffff00;
+}
+
+.circle::after {
+	animation-delay: -1.5s;
+}
+
+@keyframes latido {
+	0% {
+		width: 70px;
+		height: 70px;
+		border: 10px solid gray;
+	}
+	100% {
+		width: 120px;
+		height: 120px;
+		border: 10px solid transparent;
+	}
 }
 
 /* modal  */
@@ -61,13 +300,12 @@ body {
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	position: absolute;
-	width: 3.3%;
-    height: 6%;
-    right: 55.1%;
-    top: 77.6%;
+	width: 243%;
+	height: 73%;
+	left: 177%;
+	top: 450%;
 	z-index: 100;
 	cursor: pointer;
-	border-radius: 64px;
 }
 
 .modal {
@@ -76,19 +314,16 @@ body {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	z-index: 300;
+	z-index: 67;
 	display: block;
 	left: 0%;
 	top: 0%;
 }
 
-#image-1 {
-	width: 60%;
-    /* height: 18%; */
-    position: absolute;
-    right: 28.7%;
-    top: 51.5%;
-	display: none;
+.ancho {
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 
 .closeModal {
@@ -97,153 +332,8 @@ body {
 	height: 10%;
 	z-index: 1000;
 	top: 10%;
-	right: 7%;
+	right: 6%;
 	cursor: pointer;
-}
-
-/* modal  */
-.openModal1 {
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	position: absolute;
-	width: 3.3%;
-    height: 6%;
-    right: 10%;
-    top: 41.2%;
-	z-index: 100;
-	cursor: pointer;
-	border-radius: 64px;
-}
-
-.modal1 {
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	z-index: 300;
-	display: block;
-	left: 0%;
-	top: 0%;
-}
-
-#image {
-	width: 59.6%;
-    position: absolute;
-    right: 2.7%;
-    top: 46.4%;
-	display: none;
-}
-
-.closeModal1 {
-	position: absolute;
-	width: 5%;
-	height: 10%;
-	z-index: 1000;
-	top: 10%;
-	right: 7%;
-	cursor: pointer;
-}
-
-@keyframes fullpart {
-	to {
-		height: 100%;
-	}
-
-	from {
-		height: 0px;
-	}
-}
-
-.boton-next {
-	position: absolute;
-	width: 5%;
-	height: 9%;
-	right: 3%;
-	top: 86%;
-	cursor: pointer;
-}
-.boton-next img {
-	width: 100%;
-	height: 100%;
-}
-
-.boton-next1 {
-	position: absolute;
-	width: 5%;
-	right: 1%;
-	top: 48%;
-}
-.boton-next1 img {
-	width: 100%;
-	height: 100%;
-}
-
-.boton-next2 {
-	position: absolute;
-	width: 5%;
-	right: 10%;
-	top: 48%;
-}
-.boton-next2 img {
-	width: 100%;
-	height: 100%;
-}
-
-.dowload {
-	position: absolute;
-	width: 53%;
-	height: 21%;
-	left: 9%;
-	top: 51%;
-}
-
-.puntero {
-	position: absolute;
-	width: 3%;
-	/* height: 6.4%; */
-	top: 88.2%;
-	right: 32.5%;
-}
-
-.puntero img {
-	width: 100%;
-	height: 100%;
-	transform: rotate(1deg);
-}
-
-.puntero.animate__pulse {
-	animation-duration: 0.5s; /* Cambia el valor para ajustar la velocidad */
-}
-
-.puntero::before {
-	content: '';
-	position: absolute;
-	top: -10%;
-	left: -10%;
-	width: 120%;
-	height: 120%;
-	background: radial-gradient(circle, rgb(99 94 94 / 63%), #dbd0d0);
-	border-radius: 50%;
-	z-index: -1; /* Aseguramos que el resplandor esté detrás del puntero */
-	opacity: 0.7; /* Ajusta la opacidad según la intensidad del resplandor */
-	animation: pulseGlow 1.5s infinite; /* Animación para el resplandor */
-}
-
-/* Definimos la animación para el resplandor */
-@keyframes pulseGlow {
-	0% {
-		transform: scale(1);
-		opacity: 0.7;
-	}
-	50% {
-		transform: scale(1.5);
-		opacity: 0.3;
-	}
-	100% {
-		transform: scale(1);
-		opacity: 0.7;
-	}
 }
 
 /* Responsive */
